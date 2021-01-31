@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import spring.di.entity.Exam;
@@ -24,7 +25,8 @@ public class Program {
 //		console.setExam(exam);
 		
 		ApplicationContext context = 
-				new ClassPathXmlApplicationContext("di/setting.xml"); //setting.xml의 경로가 di라는 패키지안에 있기 때문에 패키지명도 함께 작성한다. 
+				new AnnotationConfigApplicationContext(ArongDiConfig.class);
+				//new ClassPathXmlApplicationContext("di/setting.xml"); //setting.xml의 경로가 di라는 패키지안에 있기 때문에 패키지명도 함께 작성한다. 
 		
 	//	Exam exam = context.getBean(Exam.class);
 	//	System.out.println(exam.toString());
