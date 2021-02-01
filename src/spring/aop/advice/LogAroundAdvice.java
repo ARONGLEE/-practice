@@ -12,7 +12,7 @@ public class LogAroundAdvice implements MethodInterceptor {
 		// TODO Auto-generated method stub
 		long start = System.currentTimeMillis(); //시작 시간 체크 보조업무
 		
-		Object result = invocation.proceed();
+		Object result = invocation.proceed(); //주업무를 가지고있는 것을 호출해주는 역할
 		
 		long end = System.currentTimeMillis(); //끝나는 시간 체크 보조업무
 		
