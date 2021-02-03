@@ -59,6 +59,9 @@ public class NewlecExam implements Exam {
 		
 		int result = kor+eng+math+com; //실질적인 사용자에 의해 만들어진 주업무
 		
+		if(kor > 100)
+			throw new IllegalArgumentException("유효하지 않은 국어점수");
+		
 		try {
 			Thread.sleep(200); //일부로 쓰레드로 시간을 좀 잡아둠 
 		} catch (InterruptedException e) {
