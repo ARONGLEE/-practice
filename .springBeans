@@ -5,9 +5,15 @@
 	<configSuffixes>
 		<configSuffix><![CDATA[xml]]></configSuffix>
 	</configSuffixes>
+<<<<<<< HEAD
 	<enableImports><![CDATA[true]]></enableImports>
 	<configs>
 		<config>src/main/resources/applicationContext.xml</config>
+=======
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/di/setting.xml</config>
+>>>>>>> refs/remotes/origin/master
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
